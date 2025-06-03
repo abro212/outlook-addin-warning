@@ -8,9 +8,11 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Email External Warning"/>
   <Description DefaultValue="Warns user before sending to external domains." />
-  <IconUrl DefaultValue="https://yourdomain.com/assets/icon32.png"/>
-  <SupportUrl DefaultValue="https://yourdomain.com/support"/>
   
+  <!-- ✅ Ganti ke GitHub Pages -->
+  <IconUrl DefaultValue="https://abro212.github.io/outlook-addin-warning/icon32.png"/>
+  <SupportUrl DefaultValue="https://abro212.github.io/outlook-addin-warning/support.html"/>
+
   <Hosts>
     <Host Name="Mailbox"/>
   </Hosts>
@@ -24,7 +26,8 @@
   <FormSettings>
     <Form xsi:type="ItemSend">
       <DesktopSettings>
-        <FunctionFileUrl>https://yourdomain.com/function-file.html</FunctionFileUrl>
+        <!-- ✅ Ini file HTML utama untuk fungsi handler -->
+        <FunctionFileUrl>https://abro212.github.io/outlook-addin-warning/function-file.html</FunctionFileUrl>
         <FunctionName>onMessageSendHandler</FunctionName>
       </DesktopSettings>
     </Form>
