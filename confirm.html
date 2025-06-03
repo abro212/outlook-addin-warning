@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm Send</title>
+  <script>
+    function confirmSend(result) {
+      Office.context.ui.messageParent(result);
+    }
+  </script>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+  <h3>⚠️ External Email Warning</h3>
+  <p>This email includes recipients outside <strong>mossi.co.id</strong>.</p>
+  <p>Are you sure you want to continue?</p>
+  <button onclick="confirmSend('yes')">Yes, Send</button>
+  <button onclick="confirmSend('no')">Cancel</button>
+</body>
+</html>
